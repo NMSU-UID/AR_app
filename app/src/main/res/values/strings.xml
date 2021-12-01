@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="star">Star</string>
+    <string name="features">Features</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="status">Status</string>
+    <string name="hours">Hours</string>
+    <string name="information">Information</string>
+    <string name="type">Type</string>
+    <string name="science_hall_sh">Science Hall SH</string>
+    <string name="building_hours">Building Hours:</string>
+</resources>

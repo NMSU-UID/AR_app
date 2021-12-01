@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_roomnumber_foreground"
+        android:contentDescription="Number"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Room Numbers"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dip"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="horizontal|vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:scrollbars="horizontal|vertical">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="@string/type"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="@string/location"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="@string/hours"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="@string/information"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="Classroom"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="RM: 100-121"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="9AM to 8PM"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="cs.nmsu.edu"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="Lab"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="RM: 118-118B"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="9AM to 8PM"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="cs.nmsu.edu"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="Faculty"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="RM:121-150"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="Vary"/>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:padding="5dip"
+                        android:text="cs.nmsu.edu"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="imageView5" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+ <ImageButton
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="35dp"
+     android:padding="5dp"
+     android:scaleType="fitXY"
+     android:src="@drawable/ic_building_foreground" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="13dp"
+     android:text="BUILDINGS">
+
+ </TextView>
+
+ <Button
+     android:id="@+id/scienceHall"
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerInParent="true"
+     android:layout_marginTop="185dp"
+     android:padding="5dp"
+     android:scaleType="fitXY"
+     android:text="SH  Science Hall ">
+
+ </Button>
+
+ <TextView
+     android:layout_width="145dp"
+     android:layout_height="77dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:gravity="center_horizontal"
+     android:layout_marginTop="286dp"
+     android:text="Sunday-Thursday 8am-8pm
+              Friday 8am-5pm
+     Saturday10am-6pm"></TextView>
+
+ <Button
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="391dp"
+     android:padding="5dp"
+     android:scaleType="fitXY"
+     android:text="Library Zuhl"></Button>
+
+ <TextView
+     android:layout_width="142dp"
+     android:layout_height="76dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="493dp"
+     android:gravity="center_horizontal"
+     android:text="Sunday-Thursday 8am-8pm
+             Friday 8am-5pm
+     Saturday10am-6pm"></TextView>
+
+</RelativeLayout>
